@@ -65,3 +65,10 @@ The first start creates `bookingkit.db` with demo data (`SEED_DEMO_DATA=0` to st
 ## Screenshots
 
 In `docs/screenshots/`: service choice, time slots, confirmation and the day agenda.
+
+## Live demo (no server)
+
+https://rania-dridi.github.io/demo/bookingkit/
+
+`npm run build:demo` bundles the real `BookingService` into the page with esbuild and answers `fetch('/api/...')`
+locally, so the same front end runs on a static host. Bookings are kept in `localStorage` (output in `dist-demo/`).

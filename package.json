@@ -11,7 +11,8 @@
     "dev": "tsx watch src/server.ts",
     "start": "tsx src/server.ts",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "build:demo": "node scripts/build-demo.mjs"
   },
   "dependencies": {
     "express": "^5.3.0"
@@ -20,6 +21,7 @@
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.5",
     "@types/supertest": "^7.2.1",
+    "esbuild": "^0.28.2",
     "supertest": "^7.3.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
