@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BookingKit · Agenda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="mesh"></div>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/"><i>BK</i> BookingKit</a>
+  <nav class="pill-nav"><a href="/">Réserver</a><a class="on" href="/admin.html">Agenda</a></nav>
+</div></header>
+
+<main class="wrap" style="padding-bottom:70px">
+  <div class="toolbar">
+    <div><h1>Agenda du jour</h1><p class="sub" id="dateLabel" style="margin:4px 0 0"></p></div>
+    <div class="dates">
+      <button class="btn ghost" id="prev" aria-label="Jour précédent">←</button>
+      <input type="date" id="date" aria-label="Date">
+      <button class="btn ghost" id="next" aria-label="Jour suivant">→</button>
+    </div>
+  </div>
+  <div class="kpis" id="kpis"></div>
+  <div class="scroll"><div class="agenda" id="agenda"></div></div>
+</main>
+<script type="module" src="/js/admin.js"></script>
+</body>
+</html>

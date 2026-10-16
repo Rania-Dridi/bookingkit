@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BookingKit · Réservation en ligne</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="mesh"></div>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/"><i>BK</i> BookingKit</a>
+  <nav class="pill-nav"><a class="on" href="/">Réserver</a><a href="/admin.html">Agenda</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Réservez votre rendez-vous en <span>30 secondes.</span></h1>
+    <p>Choisissez une prestation, votre professionnel et un créneau libre. Confirmation immédiate.</p>
+  </section>
+
+  <div class="layout">
+    <section class="panel" id="panel" aria-live="polite"></section>
+    <aside class="panel summary" id="summary"></aside>
+  </div>
+</main>
+<script type="module" src="/js/book.js"></script>
+</body>
+</html>
